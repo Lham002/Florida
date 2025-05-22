@@ -1,0 +1,100 @@
+div #image {
+	
+}
+.a {
+	border: 1px solid black;
+	margin: 0;
+	padding: 1px;
+	background-color: lightblue;
+	font-family: "Roboto", sans serif;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: lowercase;
+}	
+h1, h2{
+	text-align:center;
+}
+ul, li{
+	text-align:center;
+	font-size:21px;
+	}
+p {
+	color:black;
+	font-size:22px;
+}
+table, tr, thead, tbody, th, td{
+		border: 2px solid black;
+		text-align: center;
+		margin: auto;
+		height: 50px;
+		width: 100px;
+		font-size:20px;
+}
+thead{
+	background-color: hsl(349 100% 48%);
+}
+tbody{
+	background-color: rgb(211 96 45);
+}
+header {
+	position: fixed;
+	top:0; left:0; right:0;
+	background-color: rgb(235, 21, 21);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+	padding: 14px 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+header .logo {
+	font-weight: bolder;
+	font-size: 25px;
+	color: #333;
+}
+header .navbar ul li {
+	
+
+header .navbar ul li ul{
+	position: absolute;
+	left: 0;
+	width: 200px;
+	background: #fff;
+	display: inline;
+}
+header .navbar ul li ul li{
+	width: 100%;
+	border-top: 1px solid rgba(0,0,0,.1)
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+	display:initial;
+}
+#menu-bar {
+	display: inline;
+}
+header label{
+	font-size: 20px;
+	color: #333;
+	cursor: pointer;
+	display: inline;
+}
+@media only screen(max-width:430px) {
+	header {
+		padding: 20px
+		}
+	header label {
+		display: initial;
+		}
+	header .navbar {
+		position: absolute;
+		top: 100%; left: 0; right: 0;
+		background: #fff;
+		border-top : 1px solid rgba(0,0,0,.1);
+		display: inline;
+	}
+	header .navbar ul li {
+		width: 100%
+	}
+} 
